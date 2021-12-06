@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbOpenTunes from '../public/images/opentunes.png'
 import thumbShopifyUpsell from '../public/images/shopifyupsell.png'
+import thumbAvalanche from '../public/images/avalanche.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -51,6 +52,24 @@ const Works = () => (
             A website for indie comic artists to share their work with readers.
           </WorkGridItem>
         </Section> */}
+      </SimpleGrid>
+
+      <Heading as="h3" fontSize={20} mb={4}>
+        Current Activity
+      </Heading>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="avalanche"
+            title="Avalanche Hackathon"
+            thumbnail={thumbAvalanche}
+          >
+            A hackathon to supercharge the development of dApps, Web3 apps, and
+            DeFi projects. Winners will be able to showcase their projects to
+            prominent Venture Capitals.
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>

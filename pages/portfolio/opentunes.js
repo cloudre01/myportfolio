@@ -23,7 +23,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, NextJS, Hardhat, Solidity</span>
+          <span>React, NextJS, EthersJS, Hardhat, Solidity</span>
         </ListItem>
         <ListItem>
           <Meta>Linkedin</Meta>
