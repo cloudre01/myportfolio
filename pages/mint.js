@@ -13,6 +13,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Mint from '../components/mints'
+import SmileyContract from '../contracts/Smileys.json'
 
 const Works = () => (
   <Layout title="Works">
@@ -37,7 +38,9 @@ const Works = () => (
         </Heading>
         <BioSection>
           <BioYear>Contract Address</BioYear>
-          <Link href="https://rinkeby.etherscan.io/address/0x81586afebb807697b7d7aa4231001e539e188dcf">
+          <Link
+            href={`https://rinkeby.etherscan.io/address/${SmileyContract.address}`}
+          >
             Smiley (SML) on Etherscan
             <ExternalLinkIcon mx="2px" />
           </Link>
