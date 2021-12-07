@@ -1,5 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
+import Image from 'next/image'
 import {
   Container,
   Box,
@@ -40,6 +41,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
+  const MintIcon = `/images/mint${useColorModeValue('', '-dark')}.png`
 
   return (
     <Box
@@ -75,6 +77,17 @@ const Navbar = props => {
         >
           <LinkItem href="/portfolio" path={path}>
             Portfolio
+          </LinkItem>
+          <LinkItem
+            href="/mint"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <Image src={MintIcon} width={13} height={13} alt="icon" />
+            Mint NFT
           </LinkItem>
           <LinkItem
             _target="_blank"
