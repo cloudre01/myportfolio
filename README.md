@@ -10,6 +10,8 @@
 ```
 $PROJECT_ROOT
 │   # Page files
+├── contracts
+│   # Contract artifacts
 ├── pages
 │   # React component files
 ├── components
