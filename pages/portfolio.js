@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, chakra } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -21,8 +21,10 @@ const Works = () => (
             title="Opentunes"
             thumbnail={thumbOpenTunes}
           >
-            <Text fontSize={10}>(WIP)</Text>A website for music artists to mint
-            and sell their NFTs.
+            <chakra.span fontSize={10} display="block">
+              (WIP)
+            </chakra.span>
+            A website for music artists to mint and sell their NFTs.
           </WorkGridItem>
         </Section>
         <Section>
@@ -35,23 +37,6 @@ const Works = () => (
             offerings to buyers on Shopify.
           </WorkGridItem>
         </Section>
-
-        {/* <Section delay={0.1}>
-          <WorkGridItem id="thesocialr" title="The Socialr">
-            A platform to connect business owners with influencers utilizing
-            Facebook&apos;s Instagram API.
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="komikinc"
-            title="Komickinc"
-            // thumbnail={thumbFourPainters}
-          >
-            A website for indie comic artists to share their work with readers.
-          </WorkGridItem>
-        </Section> */}
       </SimpleGrid>
 
       <Heading as="h3" fontSize={20} mb={4}>
