@@ -4,8 +4,9 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbOpenTunes from '../public/images/opentunes.png'
-import thumbShopifyUpsell from '../public/images/shopifyupsell.png'
 import thumbAvalanche from '../public/images/avalanche.png'
+import thumbFloppy from '../public/images/floppy.png'
+import thumbShopifyUpsell from '../public/images/shopifyupsell.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -35,6 +36,12 @@ const Works = () => (
           >
             An app that allows merchants to be able to setup post purchase
             offerings to buyers on Shopify.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="floppy" title="Floppy NFT" thumbnail={thumbFloppy}>
+            A NFT colleciton launch with cool website design and mint function
+            integrated on the website itself.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
