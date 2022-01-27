@@ -110,8 +110,12 @@ const Home = () => (
           Worked at Nielsen as Client Service Analyst
         </BioSection>
         <BioSection>
-          <BioYear>2016 till present</BioYear>
+          <BioYear>2016 till 2021</BioYear>
           Work as a Risk Analyst
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 till present</BioYear>
+          Full Stack Developer @ Monsta Infinite
         </BioSection>
       </Section>
 
