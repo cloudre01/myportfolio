@@ -5,29 +5,28 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="OpenTunes">
+  <Layout title="8SIAN">
     <Container>
       <Title>
-        Floppy NFT <Badge>2022-</Badge>
+        8sian NFT <Badge>2022-</Badge>
       </Title>
-      <P>
-        A NFT colleciton launch with cool website design and mint function
-        integrated on the website itself.
-      </P>
+      <P>8SIAN Collectivebles NFT collection</P>
+      <P>A unique and limited release of festive NFTs</P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://www.floppynft.io/">
-            https://www.floppynft.io/ <ExternalLinkIcon mx="2px" />
+          <Meta>Opensea</Meta>
+          <Link href="https://opensea.io/collection/8siancollectibles">
+            https://opensea.io/collection/8siancollectibles{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Standard</Meta>
-          <span>ERC721a</span>
+          <span>ERC1155 NFT</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, NextJS, EthersJS, Hardhat, Solidity</span>
+          <span>VanillaJS, HTML, CSS, Hardhat, Solidity</span>
         </ListItem>
       </List>
     </Container>
