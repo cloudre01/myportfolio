@@ -1,10 +1,11 @@
-import { Container, Heading, SimpleGrid, chakra } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbOpenTunes from '../public/images/opentunes.png'
 import thumbAvalanche from '../public/images/avalanche.png'
+import thumbFwd from '../public/images/fwd.png'
 import thumbFloppy from '../public/images/floppy.png'
 import thumb8sian from '../public/images/8sian.png'
 import thumbShopifyUpsell from '../public/images/shopifyupsell.png'
@@ -13,7 +14,7 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Freelance Works
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -23,10 +24,7 @@ const Works = () => (
             title="Opentunes"
             thumbnail={thumbOpenTunes}
           >
-            <chakra.span fontSize={10} display="block">
-              (WIP)
-            </chakra.span>
-            A website for music artists to mint and sell their NFTs.
+            A website for music artists to mint and sell their music NFTs.
           </WorkGridItem>
         </Section>
         <Section>
@@ -54,7 +52,7 @@ const Works = () => (
       </SimpleGrid>
 
       <Heading as="h3" fontSize={20} mb={4}>
-        Current Activity
+        Hackacthons
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -67,6 +65,15 @@ const Works = () => (
             A hackathon to supercharge the development of dApps, Web3 apps, and
             DeFi projects. Winners will be able to showcase their projects to
             prominent Venture Capitals.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="fwd"
+            title="FWD Start-up Studio Insurtech Hackathon"
+            thumbnail={thumbFwd}
+          >
+            Regional Data Hackathon is organised by FWD Start-up studio (by FWD Takaful) & 1337 Ventures. Supported by MDEC and MRANTI. 
           </WorkGridItem>
         </Section>
       </SimpleGrid>

@@ -1,6 +1,5 @@
 import NextLink from 'next/link'
 import {
-  Link,
   Container,
   Heading,
   Box,
@@ -58,28 +57,21 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Alex is a freelance and a full-stack developer based in Puchong,
+          Alex is a freelance polyglot full-stack developer based in Puchong,
           Malaysia with a passion for building the digital world. He has a knack
           for launching products, from planning and designing, all the way to
           solving real-life problems with code.
         </Paragraph>
         <Paragraph>
           When not online, he is a sports enthusiast and loves playing badminton
-          or swimming. Venturing into the exciting Web3 space, favourite stack
-          includes{' '}
-          <Link href="https://docs.ethers.io/v5/" isExternal={true}>
-            EthersJs
-          </Link>
-          ,{' '}
-          <Link href="https://hardhat.org/" isExternal={true}>
-            Hardhat
-          </Link>{' '}
-          and{' '}
-          <Link href="https://nextjs.org/" isExternal={true}>
-            NextJs.
-          </Link>
+          or swimming. 
         </Paragraph>
         <Box align="center" my={4}>
+          <NextLink href="https://github.com/cloudre01">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow" mr={2}>
+                Github Profile
+            </Button>
+          </NextLink>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
@@ -110,12 +102,16 @@ const Home = () => (
           Worked at Nielsen as Client Service Analyst
         </BioSection>
         <BioSection>
-          <BioYear>2016 till 2021</BioYear>
+          <BioYear>2016 - 2021</BioYear>
           Work as a Risk Analyst
         </BioSection>
         <BioSection>
-          <BioYear>2021 till present</BioYear>
+          <BioYear>2021 - 2023</BioYear>
           Full Stack Developer @ Monsta Infinite
+        </BioSection>
+        <BioSection>
+          <BioYear>2023 - Present</BioYear>
+          Full Stack Developer @ Hooga Gaming
         </BioSection>
       </Section>
 
@@ -124,7 +120,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Music, Playing Piano, Programming, Cryptocurrencies, Philosophy
+          Programming, Cryptocurrencies, Philosophy, Music, Playing Piano,
         </Paragraph>
       </Section>
 
@@ -133,7 +129,7 @@ const Home = () => (
           Tech
         </Heading>
         <Paragraph>
-          Javascript, Typescript, React, Solidity, Html, CSS
+          Javascript, Typescript, React, Solidity, Html, CSS, Python, Django, Go
         </Paragraph>
       </Section>
       <Section delay={0.5}>
